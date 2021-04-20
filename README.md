@@ -12,6 +12,10 @@ Este es nuestro repositorio para nuestro proyecto de TFM Schoolboy Brawl (títul
 
 C#
 
+### TRELLO BOARD
+
+[Trello Board](https://trello.com/b/SaxiZfsI/tfm-schoolboy-brawl)
+
 ### Technologies
 
 Powered by Unity
