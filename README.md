@@ -37,9 +37,16 @@ Para cuando tengamos el ejecutable versión 'n'. Aquí pondremos el link.
 
 ### How To's
 
-+ ¿Cómo contribuir a añadir más detalles a este fichero Readme?
-Para saber como añadir apropiadamente nuevo contenido aquí está la Git Wiki [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+<dl>
+  <dt>¿Cómo contribuir a añadir más detalles a este fichero Readme?</dt>
+  <dd>
+    Para saber como añadir apropiadamente nuevo contenido aquí está la Git Wiki [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). <br/>
+    También es posible añadir nuevo contenigo usando HTML.
+  </dd>
 
-+ ¿Cómo hacer banners para Github?
-Aquí la referencia [Github banner powered by rmariuzzo](https://github.com/rmariuzzo/github-banner)
-Aquí para ir a la utilidad y crear banners [Banner Creator](https://rmariuzzo.github.io/github-banner/)
+  <dt>¿Cómo crear banners para Github?</dt>
+  <dd>
+    Aquí la referencia [Github banner powered by rmariuzzo](https://github.com/rmariuzzo/github-banner). <br/>
+    Aquí para ir a la utilidad y crear banners [Banner Creator](https://rmariuzzo.github.io/github-banner/).
+  </dd>
+</dl>
