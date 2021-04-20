@@ -6,13 +6,13 @@
 
 ### About It
 
-Este es nuestro repositorio para nuestro proyecto de TFM Schoolboy Brawl (título provisional)
+Este es nuestro repositorio para nuestro proyecto de TFM Schoolboy Brawl (título provisional). Aquí iremos añadiendo parte de nuestra documentación, al estilo de un GDD pero más sencillo y menos extenso para proveer de información al lector.
 
 ### Languages
 
 C#
 
-### TRELLO BOARD
+### Trello Board
 
 [Trello Board](https://trello.com/b/SaxiZfsI/tfm-schoolboy-brawl)
 
@@ -27,7 +27,15 @@ Powered by Unity
 + Nicolás Rapún Orduna
 + Antonio González Mandiá
 
-### HOW TOs
+### Trailer
+
+Para cuando tengamos el trailer hecho. Aquí pondremos el link.
+
+### Ejecutable
+
+Para cuando tengamos el ejecutable versión 'n'. Aquí pondremos el link.
+
+### How To's
 
 + ¿Cómo contribuir a añadir más detalles a este fichero Readme?
 Para saber como añadir apropiadamente nuevo contenido aquí está la Git Wiki [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
