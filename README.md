@@ -18,7 +18,7 @@ C#
 
 ### Technologies
 
-Powered by Unity
+Powered by Unity (versión 2020.3.5f1 LTS)
 
 ### Team
 
