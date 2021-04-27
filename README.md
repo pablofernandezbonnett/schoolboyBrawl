@@ -12,15 +12,15 @@ Este es nuestro repositorio para nuestro proyecto de TFM Schoolboy Brawl (títul
 
 C#
 
-### Trello Board
-
-[Trello Board](https://trello.com/b/SaxiZfsI/tfm-schoolboy-brawl)
-
 ### Technologies
 
 Powered by Unity (versión 2020.3.5f1 LTS)
 
-### Team
+### Trello Board
+
+[Trello Board](https://trello.com/b/SaxiZfsI/tfm-schoolboy-brawl)
+
+### The EI-Team
 
 + Zaher Ali Keshavjee
 + Pablo Miguel Fernández Bonnett
@@ -50,3 +50,15 @@ Para cuando tengamos el ejecutable versión 'n'. Aquí pondremos el link.
     Aquí para ir a la utilidad y crear banners [Banner Creator](https://rmariuzzo.github.io/github-banner/).
   </dd>
 </dl>
+
+### Planning
+Para nuestro primer Sprint, después de haber conseguido aterrizar nuestro concepto para nuestro videjuego, no sin antes enfrentar y par de rechazos de la idea original y tener que revisar su contenido y simplificarla, hemos planificado las siguientes tareas de desarrollo para poder implementar lo que será la primera versión de nuestro prototipo.
+
+Las primera versión incluye lo siguiente:
+1. Diseñar y prototipar las pantallas principales del prototipo como son la pantalla de título, el menú principal y la selección de personaje jugable.
+2. Diseñar y prototipar la cámara (control y perspectiva).
+3. Diseñar y prototipar el personaje jugable y sus control.
+4. Diseñar y prototipar el escenario o al menos secciones del escenario.
+5. Diseñar y prototipar los enemigos y sus patrones de ataque y movimiento.
+6. Diseñar y prototipar el HUD del personaje.
+7. Diseñar y prototipar el HUD de los enemigos
