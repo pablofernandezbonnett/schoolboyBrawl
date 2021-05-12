@@ -24,12 +24,22 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         ChangeEnemyPosition();
-       
+        CheckFlip();
 
     }
 
 
-  
+  public void CheckFlip()
+    {
+        if(transform.position.x < waypointsEnemy[nextPosition].transform.position.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
 
 
     public void ChangeEnemyPosition()
@@ -43,12 +53,13 @@ public class EnemyController : MonoBehaviour
             if (nextPosition < waypointsEnemy.Length-1)
             {
                 nextPosition++;
-         
+               
             }
             else
             {
                 nextPosition = 0;
-               
+            
+
             }
           
 
