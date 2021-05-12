@@ -8,7 +8,6 @@ public class ExitScript : MonoBehaviour
 public void AplicationQuit()
     {
         Application.Quit();
-        Debug.Log("hola");
     }
    
 }
