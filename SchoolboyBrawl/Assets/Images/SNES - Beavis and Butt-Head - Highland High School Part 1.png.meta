@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: 3c8f9134ba0a54af3b814137797dfd0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9191074729613798497
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_0
+  - first:
+      213: -6928119694826049255
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_1
+  - first:
+      213: -7809405743025540768
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_2
+  - first:
+      213: 9119800478783855232
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_3
+  - first:
+      213: 8116866751592825163
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_4
+  - first:
+      213: -4529426655175175607
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_5
+  - first:
+      213: -2381918894785063066
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_6
+  - first:
+      213: -8598010257104754127
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_7
+  - first:
+      213: 2720166101156183696
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_8
+  - first:
+      213: 8186241604077241006
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_9
+  - first:
+      213: 1573139695937154253
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_10
+  - first:
+      213: -3818957866587719453
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_11
+  - first:
+      213: -6916646922977979204
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_12
+  - first:
+      213: -330749539302835712
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_13
+  - first:
+      213: 8462766842591869334
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_14
+  - first:
+      213: -7465339452853883533
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_15
+  - first:
+      213: -3078263110745618468
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_16
+  - first:
+      213: -8087155494900984432
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_17
+  - first:
+      213: -3615379684386872937
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_18
+  - first:
+      213: 3815560797929717415
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_19
+  - first:
+      213: -3612460042588688275
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_20
+  - first:
+      213: 1616797276547225585
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_21
+  - first:
+      213: -4724641948993478305
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_22
+  - first:
+      213: -2141238613318831879
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_23
+  - first:
+      213: -4353900201127406179
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_24
+  - first:
+      213: -1040202352743304466
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_25
+  - first:
+      213: 7795493961385467986
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_26
+  - first:
+      213: 3316623795985011540
+    second: SNES - Beavis and Butt-Head - Highland High School Part 1_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1047
+        width: 1317
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93dc45da3eb27080800000000000000
+      internalID: -9191074729613798497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 818
+        width: 1317
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911718428df5adf90800000000000000
+      internalID: -6928119694826049255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 589
+        width: 1317
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061311c4ada6f9390800000000000000
+      internalID: -7809405743025540768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 360
+        width: 370
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a5958773a009e70800000000000000
+      internalID: 9119800478783855232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_4
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 360
+        width: 800
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b418ed93e47e4a070800000000000000
+      internalID: 8116866751592825163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 131
+        width: 960
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942191e747e3421c0800000000000000
+      internalID: -4529426655175175607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_6
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 272
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6679b889269b1fed0800000000000000
+      internalID: -2381918894785063066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_7
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 272
+        width: 39
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a2b12b93bbda880800000000000000
+      internalID: -8598010257104754127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_8
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 272
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e397d28a8ffb520800000000000000
+      internalID: 2720166101156183696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_9
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 272
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea24c88cd5f5b9170800000000000000
+      internalID: 8186241604077241006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_10
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 272
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc6666f73ae4d510800000000000000
+      internalID: 1573139695937154253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_11
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 179
+        width: 32
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8fad5dd06500bc0800000000000000
+      internalID: -3818957866587719453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_12
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 182
+        width: 48
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4591ff4422300a0800000000000000
+      internalID: -6916646922977979204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_13
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 185
+        width: 51
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00afa30eb01f86bf0800000000000000
+      internalID: -330749539302835712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 182
+        width: 48
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69974ad0b99c17570800000000000000
+      internalID: 8462766842591869334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_15
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 36
+        width: 32
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d6fe81259c56890800000000000000
+      internalID: -7465339452853883533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_16
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 95
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd781d69200d745d0800000000000000
+      internalID: -3078263110745618468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_17
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 95
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095141bcce6a4cf80800000000000000
+      internalID: -8087155494900984432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_18
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 95
+        width: 15
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791e4f7055793ddc0800000000000000
+      internalID: -3615379684386872937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_19
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 94
+        width: 9
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeb18b745893f430800000000000000
+      internalID: 3815560797929717415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_20
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 95
+        width: 15
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60753c1bb6fdddc0800000000000000
+      internalID: -3612460042588688275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_21
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 95
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f79a6e8e84007610800000000000000
+      internalID: 1616797276547225585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_22
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 12
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51a55bfd23be6eb0800000000000000
+      internalID: -4724641948993478305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_23
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 12
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0f7c173dac842e0800000000000000
+      internalID: -2141238613318831879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 12
+        width: 15
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d959c44c5d6d393c0800000000000000
+      internalID: -4353900201127406179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_25
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 11
+        width: 9
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2b53ea8757091f0800000000000000
+      internalID: -1040202352743304466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_26
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 12
+        width: 15
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2506511a4782f2c60800000000000000
+      internalID: 7795493961385467986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Beavis and Butt-Head - Highland High School Part 1_27
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 12
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4535b4d25c3070e20800000000000000
+      internalID: 3316623795985011540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
