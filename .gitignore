@@ -64,3 +64,6 @@ crashlytics-build.properties
 # Plugins Unity folder (needed only for local development not in the repo)
 /[Aa]ssets/[Pp]lugins
 
+# TextMesh Pro dependencies
+/[Aa]ssets/[Tt]extMesh*
+
