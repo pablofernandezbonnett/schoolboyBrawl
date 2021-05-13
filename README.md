@@ -52,9 +52,9 @@ Para cuando tengamos el ejecutable versión 'n'. Aquí pondremos el link.
 </dl>
 
 ### Planning
-Para nuestro primer Sprint, después de haber conseguido aterrizar nuestro concepto para nuestro videjuego, no sin antes enfrentar y par de rechazos de la idea original y tener que revisar su contenido y simplificarla, hemos planificado las siguientes tareas de desarrollo para poder implementar lo que será la primera versión de nuestro prototipo.
+Para nuestro primer Sprint, después de haber conseguido aterrizar nuestro concepto para nuestro videjuego, no sin antes enfrentar un par de rechazos de la idea original y tener que revisar su contenido y simplificarla, hemos planificado las siguientes tareas de desarrollo para poder implementar lo que será la primera versión de nuestro prototipo.
 
-Las primera versión incluye lo siguiente:
+La primera versión incluye lo siguiente:
 1. Diseñar y prototipar las pantallas principales del prototipo como son la pantalla de título, el menú principal y la selección de personaje jugable.
 2. Diseñar y prototipar la cámara (control y perspectiva).
 3. Diseñar y prototipar el personaje jugable y sus control.
