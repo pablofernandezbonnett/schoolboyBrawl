@@ -20,4 +20,20 @@ public class NewGameScript : MonoBehaviour
     {
         SceneManager.LoadScene("SelectCharacterScreen");
     }
+    public void StartNewGame()
+    {
+        SceneManager.LoadScene("PruebasEnemigo");
+    }
+    public void Options()
+    {
+        SceneManager.LoadScene("PantallaMenu");
+    }
+    public void Menu()
+    {
+        SceneManager.LoadScene("MenuScreen");
+    }
+    public void Options2()
+    {
+        SceneManager.LoadScene("PantallaMenuOptions");
+    }
 }

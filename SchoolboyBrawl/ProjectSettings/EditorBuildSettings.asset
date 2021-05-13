@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/InitialScreen.unity
     guid: c3f11b779d4cab74890d571e8b329d3c
@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SelectCharacterScreen.unity
     guid: 66fcb6e2d94ff9247bdf36248dc62dde
+  - enabled: 1
+    path: Assets/Scenes/PantallaMenu.unity
+    guid: 75aa619543a3f44508b2f921415c85b7
+  - enabled: 1
+    path: Assets/Scenes/PantallaMenuOptions.unity
+    guid: ad6a4464716dc423cb85a1cde55757ba
+  - enabled: 1
+    path: Assets/Scenes/Miscelanea.unity
+    guid: b6fce1d5dac734dfd9674479e3807228
+  - enabled: 1
+    path: Assets/Scenes/PruebasEnemigo.unity
+    guid: 654691cf3d2252d45ab5b8acf464db3b
   m_configObjects: {}
