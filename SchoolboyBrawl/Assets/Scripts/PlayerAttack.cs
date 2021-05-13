@@ -6,9 +6,11 @@ public class PlayerAttack : MonoBehaviour
 {
     public Transform attackPoint;
     public float attackRange;
+    public LayerMask enemyLayers;
 
     private Animator myAnimator;
     private bool attack;
+    [SerializeField] private int attackDmg;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +32,14 @@ public class PlayerAttack : MonoBehaviour
             attack = true;
             if (attack && !this.myAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
             {
-
                 myAnimator.SetTrigger("Attack");
-                //  myRigidBody.velocity = Vector2.zero;
-                //AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+                Debug.Log(hitEnemies.Length);
+                foreach (Collider2D enemy in hitEnemies)
+                {
+                    Debug.Log("Hit" + enemy.name);
+                    enemy.GetComponent<EnemyController>().TakeDamage(attackDmg);
+                }
             }
         }
     }

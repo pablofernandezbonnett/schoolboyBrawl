@@ -15,7 +15,7 @@ TagManager:
   - Level
   - Characters
   - Environment
-  - 
+  - Enemies
   - 
   - 
   - 
@@ -50,4 +50,7 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 2744226217
+    locked: 0
+  - name: Enemies
+    uniqueID: 1225627873
     locked: 0
