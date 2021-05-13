@@ -25,6 +25,9 @@ public class PlayerHealth : MonoBehaviour
 
     public void Death()
     {
-
+        if (this.currentHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
