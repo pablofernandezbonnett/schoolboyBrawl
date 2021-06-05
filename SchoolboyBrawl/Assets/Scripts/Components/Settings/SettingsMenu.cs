@@ -15,9 +15,15 @@ public class SettingsMenu : MonoBehaviour
 
     private Resolution[] _screenResolutions;
     private string[] _qualitySettings;
+    private int _savedResolution;
+    private int _savedGraphicsQuality;
 
     void Start()
     {
+        // Load former saved settings
+        _savedResolution = PlayerPrefs.GetInt("ScreenResolution", 0);
+        _savedGraphicsQuality = PlayerPrefs.GetInt("GraphicsQuality", 2); // medium
+
         // Enable gameplay panel as default
         // Disable rest of panels
         TogglePanels(panels[0], panels);
@@ -85,8 +91,11 @@ public class SettingsMenu : MonoBehaviour
     public void SetGraphicsQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        PlayerPrefs.SetInt("GraphicsQuality", qualityIndex);
         
         Debug.Log("Quality is =>" + qualityIndex + " " + _qualitySettings[qualityIndex]);
+        
+        PlayerPrefs.Save();
     }
 
     public void SetScreenResolution(int resolutionIndex)
@@ -94,7 +103,11 @@ public class SettingsMenu : MonoBehaviour
         Resolution screenResolution = _screenResolutions[resolutionIndex];
         Screen.SetResolution(screenResolution.width, screenResolution.height, Screen.fullScreen);
         
-        Debug.Log("Resolution is =>" + screenResolution.height + " x " + screenResolution.width);
+        PlayerPrefs.SetInt("ScreenResolution", resolutionIndex);
+
+        Debug.Log("Resolution is =>" + screenResolution.width + " x " + screenResolution.height);
+        
+        PlayerPrefs.Save();
     }
 
     public void OnClickOnPanelName(GameObject panel)
