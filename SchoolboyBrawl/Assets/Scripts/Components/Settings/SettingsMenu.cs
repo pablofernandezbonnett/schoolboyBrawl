@@ -1,37 +1,43 @@
-using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
-    
+    [Header("Components")]
     [SerializeField] private AudioMixer mainAudioMixer;
-    [SerializeField] private Dropdown screenResolutionsDropdown;
-    [SerializeField] private Dropdown graphicsQualityDropdown;
-    [SerializeField] private Toggle fullScreenToggle;
+    [SerializeField] private TMP_Dropdown screenResolutionsDropdown;
+    [SerializeField] private TMP_Dropdown graphicsQualityDropdown;
+
+    [Header("Panels")] 
+    [SerializeField] private List<GameObject> panels;
 
     private Resolution[] _screenResolutions;
+    private string[] _qualitySettings;
 
     void Start()
     {
+        // Enable gameplay panel as default
+        // Disable rest of panels
+        TogglePanels(panels[0], panels);
         InitScreenResolutionsOptions();
+        InitGraphicsOptions();
     }
 
     private void InitScreenResolutionsOptions()
     {
         _screenResolutions = Screen.resolutions;
         screenResolutionsDropdown.ClearOptions();
-        List<String> options = new List<String>();
+        List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
 
         int currentScreenResolutionIndex = 0;
         var currenScreenResolution = Screen.currentResolution;
         for (int i = 0; i < _screenResolutions.Length; i++)
         {
             Resolution screenResolution = _screenResolutions[i];
-            String option = screenResolution.width + " x " + screenResolution.height;
-            options.Add(option);
+            TMP_Dropdown.OptionData optionData = new TMP_Dropdown.OptionData(screenResolution.width + " x " + screenResolution.height);
+            options.Add(optionData);
 
             if (screenResolution.width == currenScreenResolution.width && screenResolution.height == currenScreenResolution.height)
             {
@@ -45,7 +51,30 @@ public class SettingsMenu : MonoBehaviour
 
     private void InitGraphicsOptions()
     {
-        
+        // Very Low
+        // Low
+        // Medium
+        // High
+        // Very High
+        // Ultra
+        _qualitySettings = QualitySettings.names;
+        graphicsQualityDropdown.ClearOptions();
+        int currentQualityIndex = 0;
+        var currentQualityLevel = QualitySettings.GetQualityLevel();
+        List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
+        for (int i = 0; i < _qualitySettings.Length; i++)
+        {
+            TMP_Dropdown.OptionData optionData = new TMP_Dropdown.OptionData(_qualitySettings[i]);
+            options.Add(optionData);
+
+            if (currentQualityLevel == i)
+            {
+                currentQualityIndex = i;
+            }
+        }
+        graphicsQualityDropdown.AddOptions(options);
+        graphicsQualityDropdown.value = currentQualityIndex;
+        graphicsQualityDropdown.RefreshShownValue();
     }
 
     public void SetVolume(float volume)
@@ -56,18 +85,49 @@ public class SettingsMenu : MonoBehaviour
     public void SetGraphicsQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        
+        Debug.Log("Quality is =>" + qualityIndex + " " + _qualitySettings[qualityIndex]);
     }
 
     public void SetScreenResolution(int resolutionIndex)
     {
         Resolution screenResolution = _screenResolutions[resolutionIndex];
         Screen.SetResolution(screenResolution.width, screenResolution.height, Screen.fullScreen);
+        
+        Debug.Log("Resolution is =>" + screenResolution.height + " x " + screenResolution.width);
+    }
+
+    public void OnClickOnPanelName(GameObject panel)
+    {
+        Debug.Log("Panel => " + panel.name);
+        TogglePanels(panel, panels);
+    }
+
+    private void TogglePanels(GameObject activePanel, List<GameObject> disabledPanel)
+    {
+        foreach (var panel in disabledPanel)
+        {
+            if (activePanel.name.Equals(panel.name))
+            {
+                EnablePanel(panel);
+            }
+            else
+            {
+                DisablePanel(panel);
+            }
+        }
     }
     
-    public void SetFullScreen(bool isFullScreen)
+    private void EnablePanel(GameObject panel)
     {
-        Screen.fullScreen = isFullScreen;
-        var text = fullScreenToggle.GetComponent<Text>();
-        text.text = isFullScreen ? "ON" : "OFF";
+        panel.SetActive(true);
     }
+
+    private void DisablePanel(GameObject panel)
+    {
+        panel.SetActive(false);
+    }
+    
+    // TODO remove logs and TODOs
+    // TODO put comments
 }
