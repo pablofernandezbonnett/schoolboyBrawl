@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterSelection : MonoBehaviour
@@ -9,46 +8,64 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] private GameObject rightArrow;
     [SerializeField] private GameObject leftArrow;
 
-    private int _selectedCharacter;
-    
+    public int SelectedCharacter { get; private set; }
+
+    private CharacterInfo _characterInfo;
+
     void Start()
     {
         // hide all characters
+        HideAllCharacters();
+        // show only first character on list
+        SelectedCharacter = 0;
+        characters[SelectedCharacter].SetActive(true);
+        // store in PlayerPrebs selected character
+        // PlayerPrefs.SetInt("SelectedPlayer", SelectedCharacter);
+        ArrowsControl(SelectedCharacter);
+        Debug.Log("default player index => " + SelectedCharacter);
+        Debug.Log("default player name => " + characters[SelectedCharacter].name);
+        LoadCharacterInfo(characters[SelectedCharacter]);
+    }
+
+    private void HideAllCharacters()
+    {
         for (int i = 0; i < characters.Length; i++)
         {
             Debug.Log("Character name => " + characters[i].name);
             characters[i].SetActive(false);
         }
-        // show only first character on list
-        _selectedCharacter = 0;
-        characters[_selectedCharacter].SetActive(true);
-        // store in PlayerPrebs selected character
-        // PlayerPrefs.SetInt("SelectedPlayer", _selectedCharacter);
-        ArrowsControl(_selectedCharacter);
-        Debug.Log("default player index => " + _selectedCharacter);
-        Debug.Log("default player name => " + characters[_selectedCharacter].name);
     }
 
+    private void LoadCharacterInfo(GameObject selectedCharacter)
+    {
+        _characterInfo = FindObjectOfType<CharacterInfo>();
+        _characterInfo.ShowAttributes(selectedCharacter);
+    }
+    
     public void PreviousCharacter()
     {
         Debug.Log("PreviousCharacter ");
-        characters[_selectedCharacter].SetActive(false);
-        _selectedCharacter--;
-        ArrowsControl(_selectedCharacter);
-        characters[_selectedCharacter].SetActive(true);
-        Debug.Log("player name => " + characters[_selectedCharacter].name);
-        Debug.Log("index " + _selectedCharacter);
+        characters[SelectedCharacter].SetActive(false);
+        SelectedCharacter--;
+        ArrowsControl(SelectedCharacter);
+        characters[SelectedCharacter].SetActive(true);
+        Debug.Log("player name => " + characters[SelectedCharacter].name);
+        Debug.Log("index " + SelectedCharacter);
+        _characterInfo.ResetAttributeMeters();
+        _characterInfo.ShowAttributes(characters[SelectedCharacter]);
     }
 
     public void NextCharacter()
     {
         Debug.Log("NextCharacter ");
-        characters[_selectedCharacter].SetActive(false);
-        _selectedCharacter++;
-        ArrowsControl(_selectedCharacter);
-        characters[_selectedCharacter].SetActive(true);
-        Debug.Log("player name => " + characters[_selectedCharacter].name);
-        Debug.Log("index " + _selectedCharacter);
+        characters[SelectedCharacter].SetActive(false);
+        SelectedCharacter++;
+        ArrowsControl(SelectedCharacter);
+        characters[SelectedCharacter].SetActive(true);
+        Debug.Log("player name => " + characters[SelectedCharacter].name);
+        Debug.Log("index " + SelectedCharacter);
+        _characterInfo.ResetAttributeMeters();
+        _characterInfo.ShowAttributes(characters[SelectedCharacter]);
     }
 
     private void ArrowsControl(int index)
@@ -57,10 +74,11 @@ public class CharacterSelection : MonoBehaviour
         rightArrow.SetActive(index == characters.Length -1 ? false : true);
     }
 
-    public void Test()
+    public GameObject[] GetCharacters()
     {
-        Debug.Log("Test ");
+        return characters;
     }
+    
     
     // TODO remove logs
 }
