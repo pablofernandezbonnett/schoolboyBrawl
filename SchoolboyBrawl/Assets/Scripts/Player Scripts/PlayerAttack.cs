@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using TMPro;
 using UnityEngine;
 
 
@@ -18,30 +18,40 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange;
     public LayerMask enemyLayers;
 
-    private Rigidbody myRB;
     private Animator myAnimator;
-    private AudioSource myAudio;
     private bool punch;
     private bool kick;
     [SerializeField] private int attackDmg;
     [SerializeField] private AudioClip attackSound, hitSound;
+    public TextMeshProUGUI textMeshPro;
+    
+    private float defcounterTimer = 1f;
+    private float currentTimer;
    
-    private bool activateTimerToReset;
-    private float default_ComboTimer = 0.4f;
-    private float current_ComboTimer;
+    [HideInInspector] public int hitCount;
+    [HideInInspector] public bool activateTimerToReset;
+    [HideInInspector] public float default_ComboTimer = 0.4f;
+    [HideInInspector] public float current_ComboTimer;
     private ComboState currentComboState;
 
-    
+
+    private void Awake()
+    {
+        textMeshPro = this.GetComponent<TextMeshProUGUI>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         punch = false;
         kick = false;
         myAnimator = this.GetComponent<Animator>();
-        myRB = this.GetComponent<Rigidbody>();
+        //myRB = this.GetComponent<Rigidbody>();
         current_ComboTimer = default_ComboTimer;
         currentComboState = ComboState.NONE;
-   
+        textMeshPro.enabled = false;
+        hitCount = 0;
+        
     }
 
     // Update is called once per frame
@@ -52,6 +62,7 @@ public class PlayerAttack : MonoBehaviour
         ResetValues();
         ComboAttacks();
         ResetComboState();
+        ResetCounter();
         Debug.Log(currentComboState);
     }
 
@@ -75,6 +86,7 @@ public class PlayerAttack : MonoBehaviour
                 AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
                 if (hitEnemies.Length > 0)
                 {
+                    IncreaseHitCounter();
                     AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
                 }
                
@@ -101,6 +113,7 @@ public class PlayerAttack : MonoBehaviour
                 AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
                 if (hitEnemies.Length > 0)
                 {
+                    IncreaseHitCounter();
                     AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
                 }
             }
@@ -188,6 +201,33 @@ public class PlayerAttack : MonoBehaviour
             return;
 
         Gizmos.DrawWireSphere(attackPoint.position, this.attackRange);
+    }
+
+    private void IncreaseHitCounter()
+    {
+        textMeshPro.enabled = true;
+        hitCount++;
+        textMeshPro.text = hitCount.ToString() + "HITS";
+
+    }
+
+    private void ResetCounter() {
+
+        if (activateTimerToReset)
+        {
+            currentTimer -= Time.deltaTime;
+
+            if (currentTimer <= 0)
+            {
+                hitCount = 0;
+                activateTimerToReset = false;
+                currentTimer = defcounterTimer;
+                textMeshPro.enabled = false;
+            }
+        }
+        
+        
+
     }
 
 }
