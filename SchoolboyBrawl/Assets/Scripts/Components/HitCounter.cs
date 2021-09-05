@@ -5,7 +5,7 @@ public class HitCounter : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI textMeshPro;
-    private int _hitCounter;
+    [HideInInspector] public int _hitCounter;
     private float defaultTimer = 3f;
     private float currentTimer;
     private bool activateTimeToReset;
@@ -22,15 +22,15 @@ public class HitCounter : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
-        {
-            IncreaseHitCounter();
-        }
-        ResetCount();
+        //if(Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+        //{
+        //    IncreaseHitCounter();
+        //}
+        TimedResetCount();
         
     }
 
-    private void IncreaseHitCounter()
+    public void IncreaseHitCounter()
     {
         textMeshPro.enabled = true;
         _hitCounter++;
@@ -44,7 +44,7 @@ public class HitCounter : MonoBehaviour
         textMeshPro.enabled = false;
     }
 
-    private void ResetCount()
+    public void TimedResetCount()
     {
         if (activateTimeToReset)
         {
@@ -57,5 +57,11 @@ public class HitCounter : MonoBehaviour
                 currentTimer = defaultTimer;
             }
         }
+    }
+
+    public void OnHitReset()
+    {
+        _hitCounter = 0;
+        this.textMeshPro.enabled = false;
     }
 }

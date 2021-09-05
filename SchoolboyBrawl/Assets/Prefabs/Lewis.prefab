@@ -1677,7 +1677,7 @@ GameObject:
   - component: {fileID: 4295301587773715952}
   m_Layer: 0
   m_Name: Lewis
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1710,7 +1710,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d2db6a920b382b54b9ad755127d60b42, type: 3}
   m_Controller: {fileID: 9100000, guid: 4f53e0f624f06394d9bcfec31ad73d80, type: 2}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -1783,6 +1783,10 @@ MonoBehaviour:
   attackDmg: 5
   attackSound: {fileID: 8300000, guid: 9a347c1bb12723349a80b688fbc5050f, type: 3}
   hitSound: {fileID: 8300000, guid: 2ed286fcd6114984a8a369ca9a2e2c4d, type: 3}
+  hitcounter: {fileID: 0}
+  activateTimerToReset: 0
+  default_ComboTimer: 0.4
+  current_ComboTimer: 0
 --- !u!114 &7451212883825741949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,11 +1799,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7694e65245a063458ba1f25af08dc29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 5
+  jumpForce: 6
   whatIsGround:
     serializedVersion: 2
     m_Bits: 2147483647
-  myAnimator: {fileID: 0}
 --- !u!114 &7469063330184995302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,8 +1817,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  player: {fileID: 0}
   hurtSound: {fileID: 8300000, guid: 32d4fac919e6beb499c2d60c5b27d273, type: 3}
   deathSound: {fileID: 8300000, guid: 392240bda3677154e8418b37cd8fc5b0, type: 3}
+  myAnimator: {fileID: 0}
+  healthbar: {fileID: 0}
+  hitcounter: {fileID: 0}
 --- !u!82 &4295301587773715952
 AudioSource:
   m_ObjectHideFlags: 0

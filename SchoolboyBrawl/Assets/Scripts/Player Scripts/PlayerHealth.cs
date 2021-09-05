@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
     [HideInInspector] public Animator myAnimator;
 
     public HealthBar healthbar;
+    public HitCounter hitcounter;
+
 
     private bool isDead;
 
@@ -30,8 +32,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire2"))
         {
-            ResetHitCounter();
-            TakeDamage(20);
+ 
+            TakeDamage(1); //Test that player receiving damage is shown with Healthbar
             
         }
     }
@@ -42,6 +44,8 @@ public class PlayerHealth : MonoBehaviour
         this.healthbar.SetHealth(currentHealth);
         this.myAnimator.SetTrigger("isHit");
         AudioSource.PlayClipAtPoint(hurtSound, this.transform.position);
+        hitcounter.OnHitReset();
+
 
 
         if (this.currentHealth <= 0)
@@ -77,10 +81,4 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void ResetHitCounter()
-    {
-        
-        player.GetComponent<PlayerAttack>().hitCount = 0;
-        player.GetComponent<PlayerAttack>().textMeshPro.enabled = false;
-    }
 }
