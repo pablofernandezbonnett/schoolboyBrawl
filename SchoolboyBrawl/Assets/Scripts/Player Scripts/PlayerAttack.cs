@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 
@@ -18,30 +17,33 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange;
     public LayerMask enemyLayers;
 
-    private Rigidbody myRB;
     private Animator myAnimator;
-    private AudioSource myAudio;
     private bool punch;
     private bool kick;
     [SerializeField] private int attackDmg;
+    
     [SerializeField] private AudioClip attackSound, hitSound;
-   
+    [SerializeField] private HitCounter hitcounter;
+    
     private bool activateTimerToReset;
     private float default_ComboTimer = 0.4f;
     private float current_ComboTimer;
     private ComboState currentComboState;
-
     
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         punch = false;
         kick = false;
         myAnimator = this.GetComponent<Animator>();
-        myRB = this.GetComponent<Rigidbody>();
         current_ComboTimer = default_ComboTimer;
         currentComboState = ComboState.NONE;
-   
+        hitcounter._hitCounter = 0;
+       
+        
     }
 
     // Update is called once per frame
@@ -75,6 +77,7 @@ public class PlayerAttack : MonoBehaviour
                 AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
                 if (hitEnemies.Length > 0)
                 {
+                    hitcounter.IncreaseHitCounter();
                     AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
                 }
                
@@ -101,6 +104,7 @@ public class PlayerAttack : MonoBehaviour
                 AudioSource.PlayClipAtPoint(attackSound, this.transform.position);
                 if (hitEnemies.Length > 0)
                 {
+                    hitcounter.IncreaseHitCounter();
                     AudioSource.PlayClipAtPoint(hitSound, this.transform.position);
                 }
             }
@@ -189,5 +193,6 @@ public class PlayerAttack : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackPoint.position, this.attackRange);
     }
+       
 
 }
