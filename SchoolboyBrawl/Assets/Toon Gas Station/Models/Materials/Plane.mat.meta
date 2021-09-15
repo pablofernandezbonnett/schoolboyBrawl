@@ -1,8 +1,12 @@
 fileFormatVersion: 2
-guid: 740daccb533e61440b5d50fc9f689a10
-NativeFormatImporter:
+<<<<<<< Updated upstream:SchoolboyBrawl/Assets/Scenes/Escenario3Dv2.unity.meta
+guid: b4ffee84cb88fc9498a5ebe659a583ac
+DefaultImporter:
+=======
+guid: f9935f61be6d6654ba4010bcd01145ea
+PrefabImporter:
+>>>>>>> Stashed changes:SchoolboyBrawl/Assets/Prefabs/Lewis.prefab.meta
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
