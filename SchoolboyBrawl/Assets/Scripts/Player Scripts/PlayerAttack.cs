@@ -17,7 +17,7 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public float attackRange;
     public LayerMask enemyLayers;
-
+    public bool isDoAtack;
     private Rigidbody myRB;
     private Animator myAnimator;
     private AudioSource myAudio;
@@ -37,6 +37,7 @@ public class PlayerAttack : MonoBehaviour
     {
         punch = false;
         kick = false;
+        isDoAtack = false;
         myAnimator = this.GetComponent<Animator>();
         myRB = this.GetComponent<Rigidbody>();
         current_ComboTimer = default_ComboTimer;
@@ -60,6 +61,8 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightControl) || (Input.GetKeyDown(KeyCode.LeftControl)))
         {
             punch = true;
+            isDoAtack = true;
+            Invoke("changeValueAtack", 0.9f);
             if (punch) //&& !this.myAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Punch"))
             {
                 //myAnimator.SetTrigger("Punch");
@@ -90,6 +93,8 @@ public class PlayerAttack : MonoBehaviour
             kick = true;
             if (kick)// && !this.myAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Kick"))
             {
+                isDoAtack = true;
+                Invoke("changeValueAtack", 0.9f);
                 //myAnimator.SetTrigger("Kick");
                 Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
                 Debug.Log(hitEnemies.Length);
@@ -107,6 +112,11 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+
+    void changeValueAtack()
+    {
+        isDoAtack = false;
+    } 
     void ComboAttacks()
     {
         if (Input.GetKeyDown(KeyCode.RightControl) || (Input.GetKeyDown(KeyCode.LeftControl)))
@@ -171,6 +181,7 @@ public class PlayerAttack : MonoBehaviour
                 currentComboState = ComboState.NONE;
                 activateTimerToReset = false;
                 current_ComboTimer = default_ComboTimer;
+                isDoAtack = false;
             }
         }
     }
@@ -180,6 +191,7 @@ public class PlayerAttack : MonoBehaviour
     {
         punch = false;
         kick = false;
+      
     }
 
     private void OnDrawGizmosSelected()
@@ -189,5 +201,6 @@ public class PlayerAttack : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackPoint.position, this.attackRange);
     }
+
 
 }

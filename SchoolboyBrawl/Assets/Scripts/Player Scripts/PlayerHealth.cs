@@ -26,9 +26,9 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        this.currentHealth -= 10;
+        this.currentHealth -= damage;
         //healthBar.SetHealth(currentHP);
         this.myAnimator.SetTrigger("isHit");
         AudioSource.PlayClipAtPoint(hurtSound, this.transform.position);
@@ -54,12 +54,15 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy") && currentHealth > 0){
-            TakeDamage();
-        }
-        else if(other.gameObject.CompareTag("Enemy") && currentHealth <= 0)
-        {
-            Death();
-        }
+        Debug.Log("trigger");
+        /* if (other.gameObject.CompareTag("Enemy") && currentHealth > 0){
+             TakeDamage(20);
+         }
+         else if(other.gameObject.CompareTag("Enemy") && currentHealth <= 0)
+         {
+             Death();
+         }*/
     }
+
+
 }

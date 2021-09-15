@@ -22,11 +22,11 @@ public class NewGameScript : MonoBehaviour
     }
     public void StartNewGame()
     {
-        SceneManager.LoadScene("PruebasEnemigo");
+        SceneManager.LoadScene("Prueba_Enemigo");
     }
     public void Options()
     {
-        SceneManager.LoadScene("PantallaMenu");
+        SceneManager.LoadScene("ScreenMenu");
     }
     public void Menu()
     {
@@ -34,6 +34,6 @@ public class NewGameScript : MonoBehaviour
     }
     public void Options2()
     {
-        SceneManager.LoadScene("PantallaMenuOptions");
+        SceneManager.LoadScene("ScreenSettings");
     }
 }
