@@ -22,7 +22,7 @@ public class NewGameScript : MonoBehaviour
     }
     public void StartNewGame()
     {
-        SceneManager.LoadScene("Prueba_Enemigo");
+        SceneManager.LoadScene("Level1");
     }
     public void Options()
     {

@@ -11,7 +11,7 @@ public class UiController : MonoBehaviour
     private float _spentTime;
     void Start()
     {
-        _spentTime = 61.0f;
+        _spentTime = 301.0f;
     }
 
     // Update is called once per frame

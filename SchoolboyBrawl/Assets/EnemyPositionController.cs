@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyPositionController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class EnemyPositionController : MonoBehaviour
     public AudioSource myMusic; 
     [SerializeField] private GameObject[] enemySimbolsArray;
     [SerializeField] private GameObject theBossText;
+    [SerializeField] private GameObject winText;
 
     private int pos = 0;
     private int numberOfEnemies;
@@ -25,7 +27,8 @@ public class EnemyPositionController : MonoBehaviour
         myMusic.Stop();
         myMusic.clip = normalSound;
         myMusic.Play();
-        theBossText.SetActive(false);
+        bossTextDisable();
+        WinTextDisable();
 
     }
     void Start()
@@ -51,22 +54,36 @@ public class EnemyPositionController : MonoBehaviour
         {
            // listOfEnemies[listOfEnemies.Length].transform.position = listOfPositions[listOfEnemies.Length-1].position;
         }
-        if (numberOfEnemies == 5)
+        else
+        {
+            Win();
+        }
+        if (numberOfEnemies == 2)
         {
             bossComing();
            
         }
+        
       
     }
 
+
+    public void Win()
+    {
+        WinTextActive();
+        Invoke("nextLevel",3.0f);
+       
+    }
+
+    public void nextLevel()
+    {
+        SceneManager.LoadScene("Level2");
+    }
     public void bossComing()
     {
         bossTextActive();
         listOfEnemies[pos-1].GetComponent<EnemyMovement>().setActive();
         Invoke("bossTextDisable", 3.0f);
-  
-      
-
         bossSoundActive();
     }
 
@@ -85,6 +102,16 @@ public class EnemyPositionController : MonoBehaviour
     public void bossTextDisable()
     {
         theBossText.SetActive(false);
+    }
+
+
+    public void WinTextActive()
+    {
+        winText.SetActive(true);
+    }
+    public void WinTextDisable()
+    {
+        winText.SetActive(false);
     }
     public void decreaseEnemies()
     {

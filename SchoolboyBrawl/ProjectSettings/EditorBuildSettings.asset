@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pruebas/Prueba_Enemigo.unity
     guid: 771b03f4ccd92f4479d9b688d4a6525b
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Level2.unity
+    guid: fe270794cbcb2af4b86d57fe7f95acda
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Level1.unity
+    guid: 4aad2555575b9324cbc44037aaee6073
   m_configObjects: {}
