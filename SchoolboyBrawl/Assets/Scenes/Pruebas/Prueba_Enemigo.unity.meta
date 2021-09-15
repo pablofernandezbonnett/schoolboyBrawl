@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:SchoolboyBrawl/Assets/Scenes/Pruebas/Prueba_Enemigo.unity.meta
 guid: 771b03f4ccd92f4479d9b688d4a6525b
+=======
+guid: 40ef6e60490d68541971945758777f58
+timeCreated: 1567596439
+licenseType: Store
+>>>>>>> 20adbc0c5607f2465c80dfbb75d8c933b15c8be0:SchoolboyBrawl/Assets/Toon Gas Station/Scenes/Demo_Scene_1.unity.meta
 DefaultImporter:
-  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

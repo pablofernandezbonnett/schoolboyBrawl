@@ -5,7 +5,7 @@ public class PlayerJump : MonoBehaviour
 {
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private Animator myAnimator;
+    private Animator myAnimator;
     private Rigidbody myRB;
     private bool jump;
     private bool grounded;
@@ -24,7 +24,7 @@ public class PlayerJump : MonoBehaviour
     {
         Jump();
         Debug.Log(OnGround());
-        Debug.DrawRay(this.transform.position, this.transform.TransformDirection(Vector3.down) * 1f, Color.red);
+        Debug.DrawRay(this.transform.position, this.transform.TransformDirection(Vector3.down) * 1f, Color.blue);
         ResetValues();
     }
 
@@ -35,9 +35,10 @@ public class PlayerJump : MonoBehaviour
             myRB.velocity = Vector3.up * jumpForce;
             jump = true;
             grounded = false;
+
         }
         else
-          
+            
             jump = false;
             grounded = true;
 

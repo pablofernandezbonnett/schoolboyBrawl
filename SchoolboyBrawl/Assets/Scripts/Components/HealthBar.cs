@@ -46,10 +46,10 @@ public class HealthBar : MonoBehaviour
     
     void Update()
     {
-        int damage = 10;
-        if (Input.GetButtonDown("Jump"))
-        {
-            DecreaseHealth(damage);
-        }
+        //int damage = 10;
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    DecreaseHealth(damage);
+        //}
     }
 }
