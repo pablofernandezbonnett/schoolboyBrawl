@@ -24,7 +24,7 @@ public class PlayerJump : MonoBehaviour
     {
         Jump();
         Debug.Log(OnGround());
-        Debug.DrawRay(this.transform.position, this.transform.TransformDirection(Vector3.down) * 1f, Color.red);
+        Debug.DrawRay(this.transform.position, this.transform.TransformDirection(Vector3.down) * 1f, Color.blue);
         ResetValues();
     }
 

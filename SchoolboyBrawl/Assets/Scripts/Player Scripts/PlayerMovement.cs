@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float xMovementSpeed;
     [SerializeField] private float zMovementSpeed;
-    [SerializeField] private float slideDistance;
-    private bool isSliding;
+    [SerializeField] private float dashDistance;
+    private bool isDashing;
     private float doubleTapTime;
     private KeyCode lastKeyCode;
 
@@ -36,57 +36,86 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         Movement(horizontal);
         Flip(horizontal);
-        Slide();
-
+        DashWASD();
+        DashARROWS();
     }
 
     void Movement(float horizontal)
     {
-        if (!isSliding)
+        if (!isDashing)
         {
-            this.transform.Translate(Vector3.left * Input.GetAxis("Vertical") * this.zMovementSpeed * Time.deltaTime); //to move "up and down" on global Z Axis
+            this.transform.Translate(Vector3.left * Input.GetAxis("Vertical") * this.xMovementSpeed * Time.deltaTime); //to move "up and down" on global Z Axis
 
-            this.transform.Translate(Vector3.forward * Input.GetAxis("Horizontal") * this.xMovementSpeed * Time.deltaTime); //to move forwards and backwards on global X Axis
+            this.transform.Translate(Vector3.forward * Input.GetAxis("Horizontal") * this.zMovementSpeed * Time.deltaTime); //to move forwards and backwards on global X Axis
 
             this.myAnimator.SetFloat("Speed", Mathf.Abs(horizontal != 0 ? horizontal : vertical));
         }
        
     }
 
-    void Slide()
+    void DashWASD()
     {
 
         if (Input.GetKeyDown(KeyCode.A))
         {
             if (doubleTapTime > Time.time && lastKeyCode == KeyCode.A)
             {
-                StartCoroutine(SlideTackle(-1f));
-                myAnimator.SetBool("isSliding", true);
+                StartCoroutine(Dash(-1f));
+                
             }
             else
             {
                 doubleTapTime = Time.time + 0.3f;
             }
             lastKeyCode = KeyCode.A;
-        }else
-            myAnimator.SetBool("isSliding", false);
+        }
+
 
         if (Input.GetKeyDown(KeyCode.D))
         {
             if (doubleTapTime > Time.time && lastKeyCode == KeyCode.D)
             {
-                StartCoroutine(SlideTackle(1f));
-                myAnimator.SetBool("isSliding", true);
+                StartCoroutine(Dash(1f));
             }
             else
             {
                 doubleTapTime = Time.time + 0.3f;
             }
             lastKeyCode = KeyCode.D;
-        }else
-            myAnimator.SetBool("isSliding", false);
+        }
 
 
+    }
+
+    void DashARROWS()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (doubleTapTime > Time.time && lastKeyCode == KeyCode.LeftArrow)
+            {
+                StartCoroutine(Dash(-1f));
+
+            }
+            else
+            {
+                doubleTapTime = Time.time + 0.3f;
+            }
+            lastKeyCode = KeyCode.LeftArrow;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (doubleTapTime > Time.time && lastKeyCode == KeyCode.RightArrow)
+            {
+                StartCoroutine(Dash(1f));
+            }
+            else
+            {
+                doubleTapTime = Time.time + 0.3f;
+            }
+            lastKeyCode = KeyCode.RightArrow;
+        }
     }
 
 
@@ -104,13 +133,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-    private IEnumerator SlideTackle(float direction)
+    private IEnumerator Dash(float direction)
     {
-        isSliding = true;
+        isDashing = true;
         myRB.velocity = new Vector3(myRB.velocity.x, 0f, 0f);
-        myRB.AddForce(new Vector3(slideDistance * direction, 0f, 0f), ForceMode.Impulse);
+        myRB.AddForce(new Vector3(dashDistance * direction, 0f, 0f), ForceMode.Impulse);
         yield return new WaitForSeconds(0.4f);
-        isSliding = false;
+        isDashing = false;
         
     }
 }

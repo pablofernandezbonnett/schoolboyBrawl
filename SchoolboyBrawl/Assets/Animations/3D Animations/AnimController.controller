@@ -298,7 +298,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lewis_Run
+  m_Name: Run
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -489,9 +489,6 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 6424764744499047023}
     m_Position: {x: 920, y: 30, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -4667399884830194158}
-    m_Position: {x: 630, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5605579846268127766}
     m_Position: {x: -60, y: 210, z: 0}
@@ -933,12 +930,6 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: OnGround
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: isSliding
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -1555,11 +1546,10 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lewis_Idle
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 3929393870979230219}
   - {fileID: 6336757119870463767}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}

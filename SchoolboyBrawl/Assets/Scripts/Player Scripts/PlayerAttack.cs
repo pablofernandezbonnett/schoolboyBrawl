@@ -21,16 +21,13 @@ public class PlayerAttack : MonoBehaviour
     private bool punch;
     private bool kick;
     [SerializeField] private int attackDmg;
+    
     [SerializeField] private AudioClip attackSound, hitSound;
     [SerializeField] private HitCounter hitcounter;
     
-    //private float defcounterTimer = 1f;
-    //private float currentTimer;
-   
-    //[HideInInspector] public int hitCount;
-    [HideInInspector] public bool activateTimerToReset;
-    [HideInInspector] public float default_ComboTimer = 0.4f;
-    [HideInInspector] public float current_ComboTimer;
+    private bool activateTimerToReset;
+    private float default_ComboTimer = 0.4f;
+    private float current_ComboTimer;
     private ComboState currentComboState;
     
 
@@ -42,11 +39,10 @@ public class PlayerAttack : MonoBehaviour
         punch = false;
         kick = false;
         myAnimator = this.GetComponent<Animator>();
-        //myRB = this.GetComponent<Rigidbody>();
         current_ComboTimer = default_ComboTimer;
         currentComboState = ComboState.NONE;
         hitcounter._hitCounter = 0;
-        //hitCount = 0;
+       
         
     }
 
